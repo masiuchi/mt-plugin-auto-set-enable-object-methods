@@ -1,0 +1,12 @@
+name: AutoSetEnableObjectMethods
+version: 0.01
+description: <__trans phrase="Automatically set enable_object_methods registry for old plugins.">
+plugin_link: https://github.com/masiuchi/mt-plugin-auto-set-enable-object-methods
+author_name: Masahiro IUCHI
+author_link: https://github.com/masiuchi
+
+applications:
+  cms:
+    callbacks:
+      init_app: $AutoSetEnableObjectMethods::MT::Plugin::AutoSetEnableObjectMethods::Callback::init_app
+
